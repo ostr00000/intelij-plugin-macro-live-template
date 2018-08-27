@@ -1,0 +1,19 @@
+<idea-plugin>
+    <id>com.template.macro-template</id>
+    <name>Property Finder</name>
+
+    <description><![CDATA[
+    Plugin add function in Live Template to find Makefile,
+    find PLUGINNAME variable and return its value.
+    Makefile example:
+    PLUGINNAME = This Is My Plugin Name
+    ]]></description>
+
+
+    <depends>com.intellij.modules.lang</depends>
+    <depends>com.intellij.modules.python</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <liveTemplateMacro implementation="com.template.PropertyFinderMacro"/>
+    </extensions>
+</idea-plugin>
